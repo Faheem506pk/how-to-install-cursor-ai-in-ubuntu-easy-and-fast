@@ -61,13 +61,13 @@ sudo mv cursor.appimage /opt/cursor.appimage
 sudo nano /usr/share/applications/cursor.desktop
 ```
 
-Paste this (replace `faheem506pk` with your actual username if needed):
+Paste this (replace `username` with your actual username if needed):
 
 ```ini
 [Desktop Entry]
 Name=Cursor AI IDE
 Exec=/opt/cursor.appimage
-Icon=/home/faheem506pk/.local/share/icons/cursor.png
+Icon=/home/username/.local/share/icons/cursor.png
 Type=Application
 Categories=Development;
 ```
@@ -140,7 +140,7 @@ cursor
 Make sure the icon image exists:
 
 ```
-/home/[your username]/.local/share/icons/cursor.png
+/home/[replace with your username]/.local/share/icons/cursor.png
 ```
 
 If not showing:
