@@ -1,6 +1,6 @@
-````markdown
 # 🚀 Seamless Cursor AI Installation Guide – Ubuntu AppImage Setup
 
+````markdown
 ![Cursor AI Logo](./assets/cursor-logo.png)
 
 > 🎯 *Guide written by [Faheem](https://github.com/faheem506pk) – a passionate Full Stack Web Developer from Pakistan.*
