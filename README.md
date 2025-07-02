@@ -9,9 +9,6 @@
 ## 🖥️ Install Cursor AI (.AppImage) on Ubuntu – Quick & Easy
 
 
-````markdown
-
-
 ### ✅ Prerequisites
 - Ubuntu OS installed
 - `.AppImage` file for Cursor AI downloaded
@@ -19,6 +16,7 @@
 ---
 
 ### 📥 Step 1: Download Cursor AI AppImage
+
 
 Rename the downloaded file:
 
