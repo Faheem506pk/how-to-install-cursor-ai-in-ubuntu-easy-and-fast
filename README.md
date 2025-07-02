@@ -1,3 +1,6 @@
+# 🚀 Seamless Cursor AI Installation Guide – Ubuntu AppImage Setup
+
+
 ````markdown
 # 🖥️ Install Cursor AI (.AppImage) on Ubuntu
 
@@ -143,5 +146,3 @@ If it doesn't display:
 ---
 
 Enjoy coding with Cursor AI! 🚀
-
-```
