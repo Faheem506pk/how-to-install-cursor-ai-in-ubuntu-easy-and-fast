@@ -1,0 +1,1 @@
+# how-to-install-cursor-ai-in-ubuntu-fast-and-easy
