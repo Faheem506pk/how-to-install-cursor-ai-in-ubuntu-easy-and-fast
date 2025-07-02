@@ -1,18 +1,23 @@
+````markdown
 # 🚀 Seamless Cursor AI Installation Guide – Ubuntu AppImage Setup
 
+![Cursor AI Logo](./assets/cursor-logo.png)
 
-````markdown
-# 🖥️ Install Cursor AI (.AppImage) on Ubuntu
+> 🎯 *Guide written by [Faheem](https://github.com/faheem506pk) – a passionate Full Stack Web Developer from Pakistan.*
 
-## ✅ Prerequisites
-- Ubuntu installed
+---
+
+## 🖥️ Install Cursor AI (.AppImage) on Ubuntu – Quick & Easy
+
+### ✅ Prerequisites
+- Ubuntu OS installed
 - `.AppImage` file for Cursor AI downloaded
 
 ---
 
-## 📥 Step 1: Download Cursor AI AppImage
+### 📥 Step 1: Download Cursor AI AppImage
 
-Download the `.AppImage` file and rename it to:
+Rename the downloaded file:
 
 ```bash
 cursor.appimage
@@ -20,7 +25,7 @@ cursor.appimage
 
 ---
 
-## 📁 Step 2: Make it executable
+### 📁 Step 2: Make it executable
 
 ```bash
 cd ~/Downloads
@@ -29,7 +34,7 @@ chmod a+x cursor.appimage
 
 ---
 
-## 📦 Step 3: Install `libfuse2`
+### 📦 Step 3: Install required FUSE package
 
 ```bash
 sudo apt install libfuse2
@@ -37,7 +42,7 @@ sudo apt install libfuse2
 
 ---
 
-## 🚚 Step 4: Move AppImage to `/opt`
+### 🚚 Step 4: Move AppImage to system directory
 
 ```bash
 sudo mv cursor.appimage /opt/cursor.appimage
@@ -45,13 +50,13 @@ sudo mv cursor.appimage /opt/cursor.appimage
 
 ---
 
-## 🖼️ Step 5: Create a Desktop Entry
+### 🖼️ Step 5: Create a Desktop Entry
 
 ```bash
 sudo nano /usr/share/applications/cursor.desktop
 ```
 
-Paste the following (change `[username]` to your actual username, e.g., `faheem506pk`):
+Paste this (replace `faheem506pk` with your actual username if needed):
 
 ```ini
 [Desktop Entry]
@@ -66,7 +71,7 @@ Categories=Development;
 
 ---
 
-## 🖱️ Step 6: Create a CLI Command
+### 🖱️ Step 6: Create a global CLI command
 
 ```bash
 sudo nano /usr/local/bin/cursor
@@ -79,9 +84,7 @@ Paste:
 /opt/cursor.appimage "$@" > /dev/null 2>&1 &
 ```
 
-> Save: `Ctrl + O`, then `Enter`, then `Ctrl + X`
-
-Make it executable:
+Then:
 
 ```bash
 sudo chmod +x /usr/local/bin/cursor
@@ -89,13 +92,13 @@ sudo chmod +x /usr/local/bin/cursor
 
 ---
 
-## 🔐 Step 7: AppArmor Permissions
+### 🔐 Step 7: Set up AppArmor profile
 
 ```bash
 sudo nano /etc/apparmor.d/cursor-appimage
 ```
 
-Paste:
+Paste this:
 
 ```apparmor
 #include <tunables/global>
@@ -111,9 +114,7 @@ profile cursor /opt/cursor.AppImage flags=(unconfined) {
 }
 ```
 
-> Save: `Ctrl + O`, then `Enter`, then `Ctrl + X`
-
-Apply AppArmor profile:
+Then apply:
 
 ```bash
 sudo apparmor_parser -r /etc/apparmor.d/cursor-appimage
@@ -121,7 +122,7 @@ sudo apparmor_parser -r /etc/apparmor.d/cursor-appimage
 
 ---
 
-## ✅ Step 8: Launch Cursor AI
+### ✅ Step 8: Launch Cursor AI from anywhere
 
 ```bash
 cursor
@@ -131,18 +132,29 @@ cursor
 
 ## ❓ Cursor Icon Not Showing?
 
-Make sure the icon exists at this path:
+Make sure the icon image exists:
 
 ```
 /home/faheem506pk/.local/share/icons/cursor.png
 ```
 
-If it doesn't display:
+If not showing:
 
-* Check if the image is a valid `.png`
-* Verify permissions: `chmod 644 cursor.png`
-* Reboot or run: `update-desktop-database`
+* ✅ Check it’s a valid `.png` file
+* ✅ Run: `chmod 644 cursor.png`
+* ✅ Optional: `update-desktop-database`
 
 ---
 
-Enjoy coding with Cursor AI! 🚀
+## 🙌 Author
+
+**Muhammad Faheem Iqbal**
+👨‍💻 Full Stack Web Developer
+🌐 [GitHub](https://github.com/faheem506pk)
+
+---
+
+Enjoy faster coding with **Cursor AI on Ubuntu**! 🚀
+*Feel free to star ⭐ this repo if it helped you.*
+
+```
