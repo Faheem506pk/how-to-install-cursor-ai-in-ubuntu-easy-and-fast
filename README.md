@@ -1,7 +1,3 @@
-Here's your full installation guide in `README.md` format:
-
----
-
 ````markdown
 # 🖥️ Install Cursor AI (.AppImage) on Ubuntu
 
@@ -148,9 +144,4 @@ If it doesn't display:
 
 Enjoy coding with Cursor AI! 🚀
 
-```
-
---- 
-
-Let me know if you want this as a downloadable `README.md` file too.
 ```
