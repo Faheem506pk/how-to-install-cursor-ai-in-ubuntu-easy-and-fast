@@ -140,7 +140,7 @@ cursor
 Make sure the icon image exists:
 
 ```
-/home/faheem506pk/.local/share/icons/cursor.png
+/home/[your username]/.local/share/icons/cursor.png
 ```
 
 If not showing:
