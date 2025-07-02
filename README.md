@@ -1,6 +1,10 @@
 # 🚀 Seamless Cursor AI Installation Guide – Ubuntu AppImage Setup
 
-![Cursor AI Logo](./cursor.png)
+<p align="center">
+  <img src="./cursor.png" alt="Cursor AI Logo" width="200"/>
+</p>
+
+
 
 > 🎯 *Guide written by [Faheem](https://github.com/faheem506pk) – a passionate Full Stack Web Developer from Pakistan. *
 
