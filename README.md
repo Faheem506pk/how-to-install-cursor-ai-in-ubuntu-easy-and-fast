@@ -108,10 +108,10 @@ Paste this:
 ```apparmor
 #include <tunables/global>
 
-profile cursor /opt/cursor.AppImage flags=(unconfined) {
+profile cursor /opt/cursor.appimage flags=(unconfined) {
   #include <abstractions/base>
 
-  /opt/cursor.AppImage mr,
+  /opt/cursor.appimage mr,
   owner @{HOME}/** rw,
   /tmp/** rwk,
   /proc/sys/kernel/yama/ptrace_scope r,
