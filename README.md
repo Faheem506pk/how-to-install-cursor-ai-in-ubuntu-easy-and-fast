@@ -130,7 +130,7 @@ sudo apparmor_parser -r /etc/apparmor.d/cursor-appimage
 ### ✅ Step 8: Launch Cursor AI from anywhere
 
 ```bash
-cursor
+cursor .
 ```
 
 ---
