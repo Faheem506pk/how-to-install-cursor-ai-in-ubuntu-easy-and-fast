@@ -25,7 +25,7 @@
 Rename the downloaded file:
 
 ```bash
-cursor.appimage
+cursor.AppImage
 ````
 
 ---
@@ -34,7 +34,7 @@ cursor.appimage
 
 ```bash
 cd ~/Downloads
-chmod a+x cursor.appimage
+chmod a+x cursor.AppImage
 ```
 
 ---
@@ -50,7 +50,7 @@ sudo apt install libfuse2
 ### 🚚 Step 4: Move AppImage to system directory
 
 ```bash
-sudo mv cursor.appimage /opt/cursor.appimage
+sudo mv cursor.AppImage /opt/cursor.AppImage
 ```
 
 ---
@@ -66,7 +66,7 @@ Paste this (replace `username` with your actual username if needed):
 ```ini
 [Desktop Entry]
 Name=Cursor AI IDE
-Exec=/opt/cursor.appimage
+Exec=/opt/cursor.AppImage
 Icon=/home/username/.local/share/icons/cursor.png
 Type=Application
 Categories=Development;
@@ -86,7 +86,7 @@ Paste:
 
 ```bash
 #!/bin/bash
-/opt/cursor.appimage "$@" > /dev/null 2>&1 &
+/opt/cursor.AppImage "$@" > /dev/null 2>&1 &
 ```
 
 Then:
@@ -100,7 +100,7 @@ sudo chmod +x /usr/local/bin/cursor
 ### 🔐 Step 7: Set up AppArmor profile
 
 ```bash
-sudo nano /etc/apparmor.d/cursor-appimage
+sudo nano /etc/apparmor.d/cursor-AppImage
 ```
 
 Paste this:
@@ -108,10 +108,10 @@ Paste this:
 ```apparmor
 #include <tunables/global>
 
-profile cursor /opt/cursor.appimage flags=(unconfined) {
+profile cursor /opt/cursor.AppImage flags=(unconfined) {
   #include <abstractions/base>
 
-  /opt/cursor.appimage mr,
+  /opt/cursor.AppImage mr,
   owner @{HOME}/** rw,
   /tmp/** rwk,
   /proc/sys/kernel/yama/ptrace_scope r,
@@ -122,7 +122,7 @@ profile cursor /opt/cursor.appimage flags=(unconfined) {
 Then apply:
 
 ```bash
-sudo apparmor_parser -r /etc/apparmor.d/cursor-appimage
+sudo apparmor_parser -r /etc/apparmor.d/cursor-AppImage
 ```
 
 ---
