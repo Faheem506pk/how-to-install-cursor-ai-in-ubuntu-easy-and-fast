@@ -143,6 +143,20 @@ Make sure the icon image exists:
 /home/[replace with your username]/.local/share/icons/cursor.png
 ```
 
+Since you are inside ~/Downloads and you already have cursor.png there, just run:
+```
+cp cursor.png ~/.local/share/icons/cursor.png```
+
+
+If the icons folder does not exist, create it first:
+```
+mkdir -p ~/.local/share/icons
+cp cursor.png ~/.local/share/icons/cursor.png```
+
+
+✅ Now your cursor.png will be copied to
+/home/faheem506pk/.local/share/icons/cursor.png.
+
 If not showing:
 
 * ✅ Check it’s a valid `.png` file
