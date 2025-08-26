@@ -145,7 +145,7 @@ Make sure the icon image exists:
 
 Since you are inside ~/Downloads and you already have cursor.png there, just run:
 ```
-cp cursor.png ~/.local/share/icons/cursor.png```
+cp cursor.png ~/.local/share/icons/cursor.png
 
 
 If the icons folder does not exist, create it first:
